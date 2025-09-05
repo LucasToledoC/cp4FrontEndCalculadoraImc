@@ -37,3 +37,9 @@ Este projeto é uma calculadora de Índice de Massa Corporal (IMC) desenvolvida 
 1. **Inicie o servidor de desenvolvimento:**
 
 O projeto estará disponível em `http://localhost:5173` (ou outra porta indicada no terminal).
+
+## Links do Projeto
+
+- **Repositório GitHub**: [https://github.com/LucasToledoC/cp4FrontEndCalculadoraImc](https://github.com/LucasToledoC/cp4FrontEndCalculadoraImc)
+
+- **Deploy Vercel**: [https://cp4-front-end-calculadora-imc.vercel.app/](https://cp4-front-end-calculadora-imc.vercel.app/)
