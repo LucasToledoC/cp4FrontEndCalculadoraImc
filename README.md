@@ -25,3 +25,15 @@ Este projeto é uma calculadora de Índice de Massa Corporal (IMC) desenvolvida 
 - **CSS**: Para estilização, incluindo variáveis CSS para o modo noturno e efeitos modernos como glassmorphism.
 
 - **JavaScript**: Lógica de cálculo e manipulação do DOM.
+
+## Como Rodar o Projeto Localmente
+
+1. **Clone o repositório:**
+
+1. **Navegue até o diretório do projeto:**
+
+1. **Instale as dependências:**
+
+1. **Inicie o servidor de desenvolvimento:**
+
+O projeto estará disponível em `http://localhost:5173` (ou outra porta indicada no terminal).
