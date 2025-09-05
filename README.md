@@ -17,3 +17,11 @@ Este projeto é uma calculadora de Índice de Massa Corporal (IMC) desenvolvida 
 - **Design Responsivo**: Adapta-se a diferentes tamanhos de tela (desktop, tablet, mobile).
 
 - **Estilização Monocromática**: Utiliza uma paleta de cores monocromática azul para um visual profissional e coeso.
+
+## Tecnologias Utilizadas
+
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+
+- **CSS**: Para estilização, incluindo variáveis CSS para o modo noturno e efeitos modernos como glassmorphism.
+
+- **JavaScript**: Lógica de cálculo e manipulação do DOM.
