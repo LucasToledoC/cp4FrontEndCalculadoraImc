@@ -8,7 +8,7 @@ function Resultado({resultado}){
         <div>
             <div className="tabela">
                 <h2>
-                    Seu IMC é de: <span class name="imcSpan">{resultado}</span>
+                    Seu IMC é de: <span className="imcSpan">{resultado}</span>
                 </h2>
 
             </div>

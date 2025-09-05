@@ -1,0 +1,105 @@
+.explicacao-imc-container {
+    max-width: 100%;
+    margin-bottom: 15px;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.explicacao-imc-container h2 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explicacao-imc-container h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin: 15px 0 8px 0;
+    font-weight: 600;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explicacao-imc-container p {
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explicacao-imc-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.explicacao-imc-container li {
+    color: var(--text-primary);
+    padding: 6px 0;
+    padding-left: 18px;
+    position: relative;
+    font-size: 0.9rem;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explicacao-imc-container li::before {
+    content: '•';
+    color: var(--secondary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.explicacao-imc-container li:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* Efeitos especiais para modo noturno */
+[data-theme="dark"] .explicacao-imc-container li::before {
+    color: var(--accent-color);
+}
+
+[data-theme="dark"] .explicacao-imc-container li:hover {
+    color: var(--accent-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .explicacao-imc-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .explicacao-imc-container h3 {
+        font-size: 1.2rem;
+    }
+    
+    .explicacao-imc-container p,
+    .explicacao-imc-container li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .explicacao-imc-container h2 {
+        font-size: 1.3rem;
+    }
+    
+    .explicacao-imc-container h3 {
+        font-size: 1.1rem;
+    }
+    
+    .explicacao-imc-container p,
+    .explicacao-imc-container li {
+        font-size: 0.85rem;
+    }
+}
+
