@@ -1,0 +1,182 @@
+/* Container do resultado */
+.tabela {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px var(--shadow);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideUp 0.5s ease-out;
+    border: 1px solid var(--border-color);
+}
+
+.tabela:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-hover);
+}
+
+/* Efeito glassmorphism para modo noturno */
+[data-theme="dark"] .tabela {
+    backdrop-filter: blur(10px);
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+[data-theme="dark"] .tabela:hover {
+    border: 1px solid rgba(59, 130, 246, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título do resultado */
+.tabela h2 {
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.imcSpan {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px var(--shadow);
+}
+
+/* Estilos da tabela */
+table.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.tabelaHeader {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.tabelaHeader th {
+    color: var(--white);
+    padding: 18px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tabelaBody {
+    background: var(--card-bg);
+    transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tabelaBody td {
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tabelaBody tr:hover td {
+    background-color: var(--light-color);
+}
+
+/* Efeitos especiais para modo noturno na tabela */
+[data-theme="dark"] .tabelaBody {
+    background: rgba(30, 41, 59, 0.6);
+}
+
+[data-theme="dark"] .tabelaBody tr:hover td {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.tabelaBody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Destacar resultado específico */
+.tabelaBody td:first-child {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.tabelaBody td:last-child {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .tabela {
+        padding: 25px;
+        margin-top: 15px;
+    }
+    
+    .tabela h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .imcSpan {
+        font-size: 1.6rem;
+    }
+    
+    .tabelaHeader th {
+        padding: 15px 16px;
+        font-size: 1rem;
+    }
+    
+    .tabelaBody td {
+        padding: 16px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabela {
+        padding: 20px;
+    }
+    
+    .tabela h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .imcSpan {
+        font-size: 1.4rem;
+    }
+    
+    .tabelaHeader th {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .tabelaBody td {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+    }
+}
+
